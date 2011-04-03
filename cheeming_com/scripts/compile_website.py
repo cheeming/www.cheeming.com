@@ -1,7 +1,9 @@
-from os import path
+from django.conf import settings
 from django.http import HttpRequest
 from django.template.context import RequestContext
 from django.template.loader import render_to_string
+from os import makedirs
+from os import path
 
 
 def run(output_path):
@@ -19,6 +21,12 @@ def run(output_path):
 
 
 if __name__ == '__main__':
+    if settings.DEBUG:
+        print 'DEBUG mode'
     import sys
-    output_path = sys.argv[1]
+    output_path = 'dist/'
+    if len(sys.argv) > 1:
+        output_path = sys.argv[1]
+    if not path.exists(output_path):
+        makedirs(output_path)
     run(output_path)
