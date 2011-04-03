@@ -1,0 +1,1 @@
+export PYTHONPATH=/Users/cheeming/Personal/cheeming.com/src:$PYTHONPATH;export DJANGO_SETTINGS_MODULE=cheeming_com.settings
