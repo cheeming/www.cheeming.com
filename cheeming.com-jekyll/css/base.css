@@ -1,0 +1,11 @@
+body {
+    font-family: Georgia, Georgia, serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer {
+    margin-top: 2em;
+    font-size: 0.8em;
+    color: #999999;
+}
