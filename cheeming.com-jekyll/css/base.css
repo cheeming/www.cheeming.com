@@ -4,8 +4,26 @@ body {
     color: #333333;
 }
 
+.content {
+    width: 640px;
+    margin: 0px auto;
+}
+
+.posts li {
+    font-weight: bold;
+}
+.posts li time {
+    color: #555555;
+}
+
+.post time {
+    font-weight: bold;
+    color: #999999;
+}
+
 .footer {
-    margin-top: 2em;
+    width: 640px;
+    margin: 2em auto;
     font-size: 0.8em;
     color: #999999;
 }
