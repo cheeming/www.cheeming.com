@@ -16,6 +16,10 @@ body {
     color: #555555;
 }
 
+.navigation {
+    font-size: 0.8em;
+}
+
 .post time {
     font-weight: bold;
     color: #999999;
@@ -26,4 +30,8 @@ body {
     margin: 2em auto;
     font-size: 0.8em;
     color: #999999;
+    text-align: center;
+}
+.footer .license {
+    margin-top: 7em;
 }
