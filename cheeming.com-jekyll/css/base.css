@@ -26,7 +26,13 @@ body {
 }
 
 .post img {
-    padding: 4px;
+    padding: 2px;
+    border: 1px solid #999999;
+    margin: 2px;
+}
+
+.post img.noborder {
+    border: none;
 }
 
 .footer {

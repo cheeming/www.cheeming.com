@@ -2,7 +2,7 @@
 layout: post
 title: Sabah Adventure Challenge 2012
 ---
-<img src="/images/sac2012-banner.jpg" style="float:right;" />
+<img src="/images/sac2012-banner.jpg" class="noborder" style="float:right;" />
 
 Sabah is a beautiful country, especially the Mesilau area which is right next to the towering Mt. Kinabalu. The evergreen valley of Mesilau is dotted with kampungs made up of a network of steep & hilly roads, smiley & curious kids and many of natures gifts. This is the setting for the Sabah Adventure Challenge 2012. I took part in the "solo" 60km ultra trail marathon event which requires you to endure 60km of almost unending trails and roads for 2 days, approximately 30km each day, and yes you can rest in between, but one might argue whether it is a good thing or not. The race was made more interesting with the orienteering aspect: You are given a map with some notes and with the help of a compass you will need to find a way to each checkpoint.
 
