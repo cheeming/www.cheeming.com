@@ -9,18 +9,39 @@ body {
     margin: 0px auto;
 }
 
+.posts {
+    padding-left: 2em;
+}
+
 .posts li {
     font-weight: bold;
+    list-style-type: none;
 }
-.posts li time {
+.posts li .time {
     color: #555555;
+}
+.posts li .time,
+.posts li a {
+    display: block;
+    float: left;
+}
+
+.posts li .time {
+    width: 96px;
+}
+.posts li a {
+    width: 475px;
+}
+
+p.online_services {
+    margin-top: 2.2em;
 }
 
 .navigation {
     font-size: 0.8em;
 }
 
-.post time {
+.post .time {
     font-weight: bold;
     color: #999999;
 }
