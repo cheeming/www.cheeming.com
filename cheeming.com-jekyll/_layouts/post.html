@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
 <div class="navigation"><a href="/">Home</a></div>
 <div class="post">
 <h1>{{ page.title }}</h1>
 <div><span class="time">{{ page.date | date_to_string }}</span></div>
 {{ content }}
 </div>
+
+<div class="navigation"><a href="/">Back to Home</a></div>
 
 <!-- disqus comments -->
 <div id="disqus_thread"></div>

@@ -1,11 +1,15 @@
 body {
-    font-family: Georgia, Georgia, serif;
+    font-family: 'Marmelad', serif;
     font-size: 14px;
     color: #333333;
     background-image: url(/images/bg1.jpg);
     background-repeat: repeat-x;
     margin: 50px 0px 0px 0px;
     border-top: 1px solid #999999;
+}
+
+code {
+    font-family: 'Droid Sans Mono', monospace;
 }
 
 .content {
@@ -44,6 +48,7 @@ p.online_services {
 
 .navigation {
     font-size: 0.8em;
+    margin-bottom: 1em;
 }
 
 .post .time {
