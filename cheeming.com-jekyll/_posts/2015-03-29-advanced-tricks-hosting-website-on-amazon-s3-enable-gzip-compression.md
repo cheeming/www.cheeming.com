@@ -10,8 +10,10 @@ On top of that you should also enabled gzip compression, to reduce the amount of
 
 Since I am using Amazon S3, I am dependent on what it provides. Unfortunately, [Amazon S3 doesn't support compressing your files on the fly](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html#CompressedS3).
 
-Even though Amazon S3 doesn't support that feature, we can still get around it. You can set a custom value for the ```Content-Encoding``` header for the files you host in Amazon S3, which means you can gzip all the files you upload to Amazon S3 and set the encoding value to be ```gzip```.
+Even though Amazon S3 doesn't support that feature, we can still get around it. You can set the ```Content-Encoding``` header for the files you host in Amazon S3 to have the value ```gzip```. And before you upload your files to Amazon S3 you need to compress all the files with gzip compression.
 
-We are using [complexity](https://github.com/audreyr/complexity), a Python-based static site generator, which generates the files into a ```www``` folder. And we just need to compress all the files in that folder with the ```gzip``` command line tool. You can check out the script here: [https://github.com/Infinite-Code/ic-website/blob/master/gzip-all](https://github.com/Infinite-Code/ic-website/blob/master/gzip-all)
+We are using [complexity](https://github.com/audreyr/complexity), a Python-based static site generator, which generates the static files into a ```www``` folder. You don't have to use the same tool, you can use something like [Jekyll](http://jekyllrb.com/) too. Once you generated the static files, just compress all the files in that folder with the ```gzip``` command line tool. I wrote a script that would help with that: [https://github.com/Infinite-Code/ic-website/blob/master/gzip-all](https://github.com/Infinite-Code/ic-website/blob/master/gzip-all)
 
-And to upload the website to Amazon S3, I am using the [Amazon Command Line Interface](http://aws.amazon.com/cli/) tools. You can use the ```aws s3 sync``` command and include the ```--content-encoding gzip``` param to sync all the gzip files to the Amazon S3 bucket that is hosting your website files.
+And to upload the website to Amazon S3, I am using the [Amazon Command Line Interface](http://aws.amazon.com/cli/) tools. You can use the ```aws s3 sync``` command and include the ```--content-encoding gzip``` param to sync all the files to the Amazon S3 bucket that is hosting your website files and set the encoding to the correct value.
+
+Once your web browser sees the ```Content-Encoding``` header it will decompress the files accordingly. And voila! You get gzip compression for your website, almost for free.
