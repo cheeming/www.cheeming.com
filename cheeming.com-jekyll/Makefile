@@ -2,7 +2,7 @@ install:
 	gem install jekyll
 
 hack:
-	jekyll serve
+	jekyll serve --incremental
 
 publish:
 	jekyll build
