@@ -19,7 +19,6 @@ One time AWS credentials setup
 
 ```
 $ aws configure --profile personal
-
 ```
 
 Publish current changes to AWS S3
