@@ -94,3 +94,10 @@ p.online_services {
     border: 0;
     padding: 0;
 }
+
+.lowlight {
+    color: #666666;
+}
+.flights {
+    font-family: 'Droid Sans Mono', monospace;
+}
