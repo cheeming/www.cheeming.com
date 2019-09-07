@@ -1,16 +1,30 @@
 Install and Hack
--------------------
+----------------
+Setup and run the development server
 
 ```
-$ gem install jekyll
-$ jekyll serve
+$ make install  # one time thing
+$ make hack
+```
+
+Check out the [http://127.0.0.1:4000](http://127.0.0.1:4000)
+
+```
 $ open http://127.0.0.1:4000
 ```
 
-Publish
--------
+Build & Publish
+---------------
+One time AWS credentials setup
 
 ```
-$ jekyll build
-$ open _site  # upload the files here to AWS S3
+$ aws configure --profile personal
+
+```
+
+Publish current changes to AWS S3
+
+```
+$ export AWS_PROFILE=personal
+$ make publish
 ```
