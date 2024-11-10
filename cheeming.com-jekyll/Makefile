@@ -1,5 +1,5 @@
 install:
-	gem install jekyll
+	bundle install
 
 hack:
 	jekyll serve --incremental

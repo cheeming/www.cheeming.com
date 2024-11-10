@@ -1,6 +1,13 @@
 Install and Hack
 ----------------
-Setup and run the development server
+Setup and run the development server.
+
+Pre-req:
+ - Ruby 3.3.6 (as last tested) https://www.ruby-lang.org/en/documentation/installation/
+ - AWS CLI https://aws.amazon.com/cli/
+   - For credential setup, please read
+     - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+     - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 
 ```
 $ make install  # one time thing
