@@ -25,12 +25,12 @@ Build & Publish
 One time AWS credentials setup
 
 ```
-$ aws configure --profile personal
+$ aws configure --profile www.cheeming.com
 ```
 
 Publish current changes to AWS S3
 
 ```
-$ export AWS_PROFILE=personal
+$ export AWS_PROFILE=www.cheeming.com
 $ make publish
 ```
