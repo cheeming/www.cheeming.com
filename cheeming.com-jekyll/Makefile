@@ -2,7 +2,7 @@ install:
 	bundle install
 
 hack:
-	jekyll serve --incremental
+	bundle exec jekyll serve --incremental
 
 publish:
 	jekyll build

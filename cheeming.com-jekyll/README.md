@@ -4,6 +4,7 @@ Setup and run the development server.
 
 Pre-req:
  - Ruby 3.3.6 (as last tested) https://www.ruby-lang.org/en/documentation/installation/
+   - Also needs ruby-bundler (might need to be installed separately)
  - AWS CLI https://aws.amazon.com/cli/
    - For credential setup, please read
      - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
