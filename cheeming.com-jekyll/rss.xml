@@ -5,8 +5,8 @@ layout: nil
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cheeming.com</title>
-    <link>http://www.cheeming.com/</link>
-    <atom:link href="http://www.cheeming.com/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.cheeming.com/</link>
+    <atom:link href="https://www.cheeming.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>This is cheeming's website/blog/whatever have you</description>
     <language>en-us</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
@@ -15,10 +15,10 @@ layout: nil
     {% for post in site.posts %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://www.cheeming.com{{ post.url }}</link>
+      <link>https://www.cheeming.com{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <author>me@cheeming.com (Chew Chee Ming)</author>
-      <guid>http://www.cheeming.com{{ post.id }}</guid>
+      <guid>https://www.cheeming.com{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}

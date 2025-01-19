@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>cheeming.com</title>
-  <link href="http://www.cheeming.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://www.cheeming.com/atom.xml"/>
+  <link href="https://www.cheeming.com/"/>
+  <link type="application/atom+xml" rel="self" href="https://www.cheeming.com/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://www.cheeming.com/</id>
+  <id>https://www.cheeming.com/</id>
   <author>
     <name>Chew Chee Ming</name>
     <email>me@cheeming.com</email>
@@ -16,13 +16,13 @@ layout: nil
 
   {% for post in site.posts %}
   <entry>
-    <id>http://www.cheeming.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://www.cheeming.com{{ post.url }}"/>
+    <id>https://www.cheeming.com{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="https://www.cheeming.com{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>Chew Chee Ming</name>
-      <uri>http://www.cheeming.com/</uri>
+      <uri>https://www.cheeming.com/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
