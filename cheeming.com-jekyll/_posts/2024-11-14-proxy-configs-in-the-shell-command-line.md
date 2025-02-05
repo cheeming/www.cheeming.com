@@ -18,3 +18,14 @@ export HTTPS_PROXY=socks5://localhost:1080
 And then just run your command as you normally would.
 
 And it should just work! Magic! The power of **shared libraries** and **conventions** (_standards?_).
+
+> **Update 2025-02-05**: I am experimenting with another VPN tool (worthy a post on its own) and I am finding myself having to configure different tools, as they have their own ways of figuring out the proxy settings. And this new VPN tool is not as configuration-free as Tailscale.
+>
+> Dropbox: Go to Preferences > Proxy, enable Custom proxy settings. And update the settings there.
+>
+> Docker: Go to Settings > Resources > Proxies. Enable Manual proxy configuration. Update the proxy settings and then click Apply & Restart. 
+> > *NOTE: Docker docs says [it supports auto-configuration with PAC](https://docs.docker.com/desktop/settings-and-maintenance/settings/#proxies), but their UI trims off the URL 🤔. And for SOCKS support you need to __pay__, oh well, so you can only use HTTP proxy.*
+>
+> And your `docker pull` command should go through the proxy, once that is done. 
+>
+> Both apps above say they can detect, but your mileage might vary.
