@@ -10,7 +10,7 @@ export default function RootLayout({
     <head>
     <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FIXME - cheeming.com</title>
+    <title>Cheems&apos; Home - cheeming.com</title>
     <link rel="alternate" type="application/rss+xml" title="cheeming.com feed - RSS" href="https://www.cheeming.com/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="cheeming.com feed - Atom" href="https://www.cheeming.com/atom.xml" />
 

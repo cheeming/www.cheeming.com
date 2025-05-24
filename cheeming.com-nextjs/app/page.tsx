@@ -1,5 +1,17 @@
+type Post = {
+  date: string,
+  url: string,
+  title: string,
+}
 
-export default function Home() {
+async function getPosts() : Promise<Array<Post>> {
+  const resp = await fetch('http://127.0.0.1:4000/posts.json')
+  return await resp.json()
+}
+
+
+export default async function Home() {
+  const posts = await getPosts()
   return (
     <main>
       <h1>Hi! My name is <span>Chee Ming</span>.</h1>
@@ -13,8 +25,19 @@ export default function Home() {
 
       <h4>Random Thoughts</h4>
         <ul className="posts">
-          <li><span className="time">FIXME</span><a href="">FIXME</a><div className="clearboth"></div></li>
+          {posts.map((post, index: number) => {
+            // format the date similar to cheeming.com
+            const postDate = new Date(post['date'])
+            const year = postDate.getFullYear();
+            const month = new Intl.DateTimeFormat("en-US", {month: 'short'}).format(postDate)
+            const day = String(postDate.getDate()).padStart(2, '0');
+            const dateString = `${day} ${month} ${year}`
 
+            return <li key={index}>
+              <span className="time">{dateString}</span>
+              <a href={post['url']}>{post['title']}</a>
+              <div className="clearboth"></div></li>
+          })}
         </ul>
 
       <p className="online_services">You can also find me here:</p>
@@ -27,7 +50,7 @@ export default function Home() {
 
       <div className="updated_time">
       <p>
-        Last updated: <span className="time">FIXME</span>,
+        Last updated: <span className="time">{process.env.NEXT_PUBLIC_LAST_UPDATED_AT}</span>,
         Powered by <a href="https://nextjs.org/">NextJS</a>
       </p>
       </div>

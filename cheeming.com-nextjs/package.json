@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "npm run prebuild",
     "dev": "next dev --turbopack",
+    "prebuild": "date +\"%d %b %Y\" > .last_updated",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
