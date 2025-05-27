@@ -35,7 +35,7 @@ export default async function Home() {
 
             return <li key={index}>
               <span className="time">{dateString}</span>
-              <a href={post['url']}>{post['title']}</a>
+              <a href={process.env.POSTS_ROOT_DOMAIN + post['url']}>{post['title']}</a>
               <div className="clearboth"></div></li>
           })}
         </ul>
