@@ -5,6 +5,8 @@ type Post = {
 }
 
 async function getPosts() : Promise<Array<Post>> {
+  // FIXME: This depends on `make hack` in the `cheeming.com-jekyll` project
+  // NOTE: NextJS does a lot of caching, so it might not hit the server directly
   const resp = await fetch('http://127.0.0.1:4000/posts.json')
   return await resp.json()
 }
