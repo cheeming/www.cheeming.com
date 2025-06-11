@@ -39,9 +39,9 @@ I suppose we never stop learning about ourselves.
 
 ## One Final Thing
 
-I have been reading [an anti-time management book](https://www.amazon.com/Anti-Time-Management-Reclaim-Revolutionize-Results-ebook/dp/B09N762FCN/ref=sr_1_1), and there is a concept called _Project Stacking_ which is to look at overlaps for multiple projects and work on them together. 
+I have been reading [an anti-time management book](https://amzn.to/4mMRMtK), and there is a concept called _Project Stacking_ which is to look at overlaps for multiple projects and work on them together. 
 
-[![Book Anti-Time Management](/images/antitime.jpg)](https://www.amazon.com/Anti-Time-Management-Reclaim-Revolutionize-Results-ebook/dp/B09N762FCN/ref=sr_1_1)
+[![Book Anti-Time Management](/images/antitime.jpg)](https://amzn.to/4mMRMtK)
 
 In this case for my cycling trip, I combined my own personal cycling project with our family trip, and also connecting with friends all into 1 trip which allowed us to accomplish different goals at the same time, which made the overall trip even more fruitful.
 
