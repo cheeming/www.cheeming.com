@@ -1,0 +1,45 @@
+---
+layout: default
+title: Cheems' 主页
+---
+<div class="language-switch">
+    <a href="/">English</a> | <a class="active" href="/zh/">中文</a>
+</div>
+
+<h1>你好！我是 <span>志明</span>。</h1>
+<h2>我是一名软件工程师。</h2>
+<h3 class="lowlight">之前，我在 <a href="https://www.grab.com/">Grab</a> 担任工程经理，负责开发 <a href="https://forbusiness.grab.com">B2B客户产品</a> 并改善我们数千名Grab软件工程师的内部开发体验和工具。<br />
+    <br />
+    在那之前，我还共同创立了 <a href="http://infinite-code.com">Infinite Code</a>，一家软件开发公司，专注于定制网站和移动应用程序的开发。</h3>
+<h4>
+    我非常喜欢用 <a href="https://www.python.org/">Python</a> 编程。<br />
+    我正在努力提高中文阅读能力（<em>对我来说，学习计算机语言似乎更容易</em>）。<br />
+    我喜欢烘焙和冲泡自己的咖啡。最近我也开始自己烤披萨和面包。<br />
+    我是 <a href="http://en.wikipedia.org/wiki/Kuala_Lumpur">吉隆坡</a> 人，曾在 <a href="http://en.wikipedia.org/wiki/Beijing">北京</a> 和 <a href="https://en.wikipedia.org/wiki/Singapore">新加坡</a> 生活过一段时间，现在以 <a href="https://en.wikipedia.org/wiki/Dali_City">大理</a> 为家。<br />
+</h4>
+
+<p class="lowlight">注意：上面和你正在读的这一行是用AI工具翻译的。我的中文还不太好！😛</p>
+
+<h4>随想</h4>
+<ul class="posts">
+{% for post in site.posts %}
+    {% if post.lang == 'zh' %}
+    <li><span class="time">{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a><div style="clear:both;"></div></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<p class="online_services">你也可以在这些地方找到我：</p>
+<ul class="online_services">
+    <li><a href="https://x.com/cheeming">Twitter</a></li>
+    <li><a href="https://www.linkedin.com/in/cheeming">Linkedin</a></li>
+    <li><a href="https://github.com/cheeming">GitHub</a></li>
+    <li><a href="https://stackoverflow.com/users/28836/cheeming">Stack Overflow</a></li>
+</ul>
+
+<div class="updated_time">
+    <p>
+        最后更新：<span class="time">{{ site.time | date_to_string }}</span>,
+        由 <a href="http://jekyllrb.com/">Jekyll</a> 驱动
+    </p>
+</div> 
