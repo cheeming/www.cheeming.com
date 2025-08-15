@@ -19,6 +19,18 @@ And then just run your command as you normally would.
 
 And it should just work! Magic! The power of **shared libraries** and **conventions** (_standards?_).
 
+> **Update 2025-08-15**: Additional things learned while using proxies on the command line:
+> - Use [```socks5h://```](https://curl.se/libcurl/c/CURLOPT_PROXY.html#socks5) to allow the proxy server to do the DNS resolution, for improved privacy.
+> - If the program do not support SOCKS, you can quickly setup a HTTP proxy that will tunnel to the SOCKS server using this Python one-liner ([inspired by a superuser answer](https://superuser.com/a/1533394/609321)):
+> ```
+> pproxy -r socks5://localhost:1080 -v
+> ```
+> And use the following exports (port ```8080``` is the default):
+> ```
+> HTTP_PROXY=http://localhost:8080
+> HTTPS_PROXY=http://localhost:8080
+> ```
+
 > **Update 2025-02-05**: I am experimenting with another VPN tool (worthy a post on its own) and I am finding myself having to configure different tools, as they have their own ways of figuring out the proxy settings. And this new VPN tool is not as configuration-free as Tailscale.
 >
 > Dropbox: Go to Preferences > Proxy, enable Custom proxy settings. And update the settings there.
