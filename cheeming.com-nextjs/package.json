@@ -6,7 +6,7 @@
     "predev": "npm run prebuild",
     "dev": "next dev --turbopack",
     "prebuild": "date +\"%d %b %Y\" > .last_updated",
-    "build": "next build -d",
+    "build": "rm -Rf .next/ out/ && next build -d",
     "start": "next start",
     "lint": "next lint",
     "httpserver": "cd out/ && python3 -m http.server 18080",

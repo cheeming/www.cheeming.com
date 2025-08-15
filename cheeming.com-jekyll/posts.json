@@ -6,6 +6,7 @@ layout: none
     {
         "date": {{ post.date | date_to_xmlschema | jsonify }},
         "url": {{ post.url | jsonify }},
+        "lang": {{ post.lang | jsonify }},
         "title": {{ post.title | jsonify }},
         "content": {{ post.content | markdownify | jsonify }}
     }

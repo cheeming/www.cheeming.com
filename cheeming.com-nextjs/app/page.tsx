@@ -1,6 +1,7 @@
 type Post = {
   date: string,
   url: string,
+  lang: string,
   title: string,
 }
 
@@ -28,6 +29,9 @@ export default async function Home() {
       <h4>Random Thoughts</h4>
         <ul className="posts">
           {posts.map((post, index: number) => {
+            if (post['lang'] == 'zh') {
+              return <span key={index}></span>
+            }
             // format the date similar to cheeming.com
             const postDate = new Date(post['date'])
             const year = postDate.getFullYear();
