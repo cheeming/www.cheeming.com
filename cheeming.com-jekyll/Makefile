@@ -7,7 +7,7 @@ hack:
 
 build:
 	bundle exec jekyll clean
-	bundle exec jekyll build
+	bundle exec jekyll build --verbose
 
 publish: build
 	aws s3 sync _site/ s3://www.cheeming.com/ --acl public-read --delete

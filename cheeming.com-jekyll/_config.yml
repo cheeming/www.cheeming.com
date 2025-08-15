@@ -1,1 +1,2 @@
-exclude: ["README.md", "Makefile"]
+exclude: ["*.txt", "README.md", "Makefile", "shell.nix"]
+include: ["robots.txt"]

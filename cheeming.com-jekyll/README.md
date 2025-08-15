@@ -2,7 +2,7 @@ Install and Hack
 ----------------
 Setup and run the development server.
 
-Pre-req:
+Pre-req (or use nix-shell):
  - Ruby 3.3.6 (as last tested) https://www.ruby-lang.org/en/documentation/installation/
    - Also needs ruby-bundler (might need to be installed separately)
  - AWS CLI https://aws.amazon.com/cli/
