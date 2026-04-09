@@ -1,0 +1,163 @@
+---
+layout: default
+title: TMPSC
+---
+<style>
+    .tmpsc-page {
+        --tmpsc-ink: #102a43;
+        --tmpsc-muted: #486581;
+        --tmpsc-accent: #f0b429;
+        --tmpsc-soft: #f7fbff;
+        --tmpsc-card: #ffffff;
+        --tmpsc-border: #d9e2ec;
+        --tmpsc-glow: rgba(240, 180, 41, 0.28);
+        color: var(--tmpsc-ink);
+        margin: 1rem 0 2rem 0;
+    }
+
+    .tmpsc-page .hero {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 1.4rem;
+        border: 1px solid var(--tmpsc-border);
+        border-radius: 16px;
+        background: linear-gradient(135deg, #ffffff 0%, var(--tmpsc-soft) 68%, #ecf4ff 100%);
+        box-shadow: 0 10px 28px -18px var(--tmpsc-glow);
+    }
+
+    .tmpsc-page .hero-logo {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 14px;
+        border: 1px solid var(--tmpsc-border);
+        background: #ffffff;
+        display: block;
+    }
+
+    .tmpsc-page .hero h1 {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0.03em;
+    }
+
+    .tmpsc-page .hero p {
+        margin: 0.8rem 0 0 0;
+        color: var(--tmpsc-muted);
+        line-height: 1.7;
+    }
+
+    .tmpsc-page .highlights {
+        margin: 1.4rem 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .tmpsc-page .tile {
+        border: 1px solid var(--tmpsc-border);
+        border-radius: 12px;
+        background: var(--tmpsc-card);
+        padding: 1rem;
+    }
+
+    .tmpsc-page .tile h2 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .tmpsc-page .tile p {
+        margin: 0.6rem 0 0 0;
+        line-height: 1.65;
+        color: var(--tmpsc-muted);
+        font-size: 0.95rem;
+    }
+
+    .tmpsc-page .cta {
+        margin: 1.4rem 0 0 0;
+        border: 1px dashed var(--tmpsc-border);
+        border-radius: 12px;
+        padding: 1rem;
+        background: #fffdf5;
+    }
+
+    .tmpsc-page .cta p {
+        margin: 0;
+        color: var(--tmpsc-muted);
+    }
+
+    .tmpsc-page .cta a {
+        display: inline-block;
+        margin-top: 0.85rem;
+        text-decoration: none;
+        font-weight: 700;
+        color: #1f2937;
+        background: var(--tmpsc-accent);
+        border: 1px solid #d8a31e;
+        border-radius: 999px;
+        padding: 0.5rem 1rem;
+    }
+
+    .tmpsc-page .cta a:hover {
+        filter: brightness(0.96);
+    }
+
+    @media (max-width: 860px) {
+        .tmpsc-page .hero {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .tmpsc-page .hero-logo {
+            margin: 0 auto;
+        }
+
+        .tmpsc-page .highlights {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<div class="tmpsc-page">
+    <section class="hero">
+        <img class="hero-logo" src="/images/tmpsc_logo_colour.jpg" alt="TMPSC logo" />
+        <div>
+            <h1>The Missing Piece Software Consultancy</h1>
+            <p>
+            I am a software engineer and engineering manager with 20+ years of work experience [<a href="https://www.linkedin.com/in/cheeming/" target="_blank">Linkedin</a>]. This is my boutique software consultancy that focuses on helping startups and technology companies scale up their software development in terms of people, principles and process.
+            </p>
+        </div>
+    </section>
+
+    <section class="highlights">
+        <article class="tile">
+            <h2>Being Strategic</h2>
+            <p>
+                I have run small teams and also managed many teams as part of my portfolio as a Head of Engineering of a large technology company.
+            </p>
+            <p>
+                I understand how to help teams develop both their tactical execution plans and long-term strategy.
+            </p>
+        </article>
+        <article class="tile">
+            <h2>Hands On</h2>
+            <p>
+                I have played the role of a software engineer  in both small startups and also large tech teams.
+            </p>
+            <p>
+                I love to explore the role of technology in different domains and I believe I can value add to your teams.
+            </p>
+        </article>
+        <article class="tile">
+            <h2>Contact Me</h2>
+            <p>
+                If you have any interesting technology projects that require additional help, let's have a chat about it.
+            </p>
+            <p>
+                Send me an email at cheems @ tmpsc.net
+            </p>
+        </article>
+    </section>
+
+</div>
