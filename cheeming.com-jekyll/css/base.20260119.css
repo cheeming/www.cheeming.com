@@ -149,6 +149,28 @@ blockquote {
     font-weight: bold;
 }
 
+.nice-header {
+    margin-bottom: 1.5em;
+}
+
+.nice-posts {
+    padding-left: 0;
+}
+
+.nice-posts li {
+    margin-bottom: 1.2em;
+}
+
+.nice-source {
+    color: #666666;
+    font-size: 0.9em;
+    margin-top: 0.25em;
+}
+
+.nice-post p {
+    line-height: 1.7em;
+}
+
 @media (max-width: 460px) {
     .lum-lightbox .lum-lightbox-inner img {
         max-width: 100vw;

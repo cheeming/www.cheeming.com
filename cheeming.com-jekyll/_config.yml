@@ -1,2 +1,7 @@
 exclude: ["*.txt", "README.md", "Makefile", "shell.nix"]
 include: ["robots.txt"]
+
+collections:
+    nice:
+        output: true
+        permalink: /nice/:name/

@@ -1,0 +1,27 @@
+---
+layout: default
+title: News in Chinese, Easy!
+---
+<h1>News in Chinese, Easy!</h1>
+<p>
+Daily news in simple and easy chinese, for the beginner chinese learners. Click on each story to read more!
+</p>
+<ul class="posts nice-posts">
+{% assign nice_posts = site.nice | sort: "date" | reverse %}
+{% for post in nice_posts %}
+    {% if post.lang == 'zh' %}
+    <li>
+        <span class="time">{{ post.date | date_to_string }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="nice-source">来源：<a href="{{ post.source_url }}">{{ post.source_name }}</a></div>
+        <div style="clear:both;"></div>
+    </li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<div class="updated_time">
+    <p>
+        Last updated: <span class="time">{{ site.time | date_to_string }}</span>
+    </p>
+</div>

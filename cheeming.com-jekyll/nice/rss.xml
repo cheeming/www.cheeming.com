@@ -1,0 +1,26 @@
+---
+layout: none
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NICE! News in Chinese, Easy!</title>
+    <link>https://www.cheeming.com/nice/</link>
+    <atom:link href="https://www.cheeming.com/nice/rss.xml" rel="self" type="application/rss+xml" />
+    <description>每日一篇简短中文新闻</description>
+    <language>zh-cn</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+    {% assign nice_posts = site.nice | sort: "date" | reverse %}
+    {% for post in nice_posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>https://www.cheeming.com{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <guid>https://www.cheeming.com{{ post.url }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

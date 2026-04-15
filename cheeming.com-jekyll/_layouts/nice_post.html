@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="navigation">
+    <a href="/nice/">Back to NICE</a>
+</div>
+
+<div class="post nice-post">
+    <h1>{{ page.title }}</h1>
+    <div><span class="time">{{ page.date | date_to_string }}</span></div>
+    <p class="nice-source">来源：<a href="{{ page.source_url }}">{{ page.source_name }}</a></p>
+    {{ content }}
+</div>
+
+<div class="navigation">
+    <a href="/nice/">Back to NICE</a>
+</div>
