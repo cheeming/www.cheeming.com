@@ -29,5 +29,8 @@ Scope: `cheeming.com-jekyll` in this workspace.
 
 ## Editing guidance
 - Main wrapper layout: `_layouts/default.html`; post layout with Disqus: `_layouts/post.html`.
-- Active stylesheet link is `/css/base.20260119.css` in `_layouts/default.html` (not `css/base.css`).
+- Active stylesheet link is `css/base.20260416.css` in `_layouts/default.html` (not `css/base.css`).
 - Do not edit minified vendor assets (`css/*.min.css`, `js/luminous.min.js`).
+
+## Reusable skills
+- Check the skills at `.agents/skills/`

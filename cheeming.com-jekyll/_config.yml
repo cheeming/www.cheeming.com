@@ -1,4 +1,4 @@
-exclude: ["*.txt", "README.md", "Makefile", "shell.nix", "AGENTS.md"]
+exclude: ["*.txt", "README.md", "Makefile", "shell.nix", "AGENTS.md", "_nice/TEMPLATE.md"]
 include: ["robots.txt"]
 
 collections:

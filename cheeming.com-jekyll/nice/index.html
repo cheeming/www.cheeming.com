@@ -13,7 +13,6 @@ Daily news in simple and easy chinese, for the beginner chinese learners. Click 
     <li>
         <span class="time">{{ post.date | date_to_string }}</span>
         <a href="{{ post.url }}">{{ post.title }}</a>
-        <div class="nice-source">来源：<a href="{{ post.source_url }}">{{ post.source_name }}</a></div>
         <div style="clear:both;"></div>
     </li>
     {% endif %}
