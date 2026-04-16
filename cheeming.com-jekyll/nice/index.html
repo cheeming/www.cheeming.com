@@ -12,7 +12,13 @@ Daily news in simple and easy chinese, for the beginner chinese learners. Click 
     {% if post.lang == 'zh' %}
     <li>
         <span class="time">{{ post.date | date_to_string }}</span>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}" class="nice-title-link">
+            {% if post.title_pinyin %}
+            <ruby>{{ post.title }}<rt>{{ post.title_pinyin }}</rt></ruby>
+            {% else %}
+            {{ post.title }}
+            {% endif %}
+        </a>
         <div style="clear:both;"></div>
     </li>
     {% endif %}

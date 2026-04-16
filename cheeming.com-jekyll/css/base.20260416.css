@@ -161,6 +161,17 @@ blockquote {
     margin-bottom: 1.2em;
 }
 
+.nice-title-link ruby {
+    font-size: 1.25em;
+    ruby-position: under;
+}
+
+.nice-title-link rt {
+    color: #666666;
+    font-size: 0.65em;
+    line-height: 1.2;
+}
+
 .nice-source {
     color: #666666;
     font-size: 0.9em;
