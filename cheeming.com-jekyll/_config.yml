@@ -4,4 +4,4 @@ include: ["robots.txt"]
 collections:
     nice:
         output: true
-        permalink: /nice/:name/
+        permalink: /nice/:name.html
