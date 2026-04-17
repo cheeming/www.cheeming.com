@@ -162,7 +162,7 @@ blockquote {
 }
 
 .nice-title-link ruby {
-    font-size: 1.25em;
+    font-size: 1.4em;
     ruby-position: under;
 }
 
@@ -174,11 +174,15 @@ blockquote {
 
 .nice-source {
     color: #666666;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 .nice-post p {
     line-height: 1.7em;
+}
+
+.nice-post h1 {
+    font-size: 1.2em;
 }
 
 .nice-post ruby {
@@ -189,7 +193,7 @@ blockquote {
 .nice-post rt {
     color: #666666;
     font-size: 0.7em;
-    line-height: 1.2;
+    line-height: 1.7em;
 }
 
 @media (max-width: 460px) {

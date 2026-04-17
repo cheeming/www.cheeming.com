@@ -6,7 +6,13 @@ layout: default
 </div>
 
 <div class="post nice-post">
-    <h1>{{ page.title }}</h1>
+    <h1>
+        {% if page.title_pinyin %}
+        <ruby>{{ page.title }}<rt>{{ page.title_pinyin }}</rt></ruby>
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+    </h1>
     <div><span class="time">{{ page.date | date_to_string }}</span></div>
     <p class="nice-source">来源：<a href="{{ page.source_url }}">{{ page.source_name }}</a></p>
     {{ content }}
