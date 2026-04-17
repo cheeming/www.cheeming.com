@@ -36,7 +36,7 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
    - `<ruby>` and `<rt>` tags are balanced.
    - `source_url` is a valid URL string.
 7. Use `make build` to verify that build is healthy.
-8. If build is healthy, automatically commit new MD file into git history, using commit description: Add new post on "topic-slug". Replace "topic-slug" with the generated topic slug. Before running `git push`, run `ssh-add ~/.ssh/id_github` to add the relevant ssh key into ssh agent.
+8. If build is healthy, automatically commit new MD file into git history, using commit description: Add new post on "topic-slug". Replace "topic-slug" with the generated topic slug.
 9. Finally publish it to AWS S3, by first setup environment variable `export AWS_PROFILE=www.cheeming.com` and then run `make publish`
 
 ## Output style guardrails

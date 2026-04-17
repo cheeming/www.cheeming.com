@@ -14,7 +14,7 @@ published: true
     <ruby>威尔士<rt>wēi ěr shì</rt></ruby>
     <ruby>彭布罗克城堡<rt>péng bù luó kè chéng bǎo</rt></ruby>
     <ruby>地下<rt>dì xià</rt></ruby>
-    <ruby>发现<rt>fā xiàn</rt></ruby>了
+    <ruby>发现了<rt>fā xiàn le</rt></ruby>
     <ruby>大型洞穴<rt>dà xíng dòng xué</rt></ruby>。
 </p>
 
@@ -22,7 +22,7 @@ published: true
     <ruby>考古团队<rt>kǎo gǔ tuán duì</rt></ruby>
     <ruby>在小规模发掘中<rt>zài xiǎo guī mó fā jué zhōng</rt></ruby>
     <ruby>找到<rt>zhǎo dào</rt></ruby>
-    <ruby>石器<rt>shí qì</rt></ruby>和
+    <ruby>石器和<rt>shí qì hé</rt></ruby>
     <ruby>河马骨骼<rt>hé mǎ gǔ gé</rt></ruby>，
     <ruby>年代约十二万年<rt>nián dài yuē shí èr wàn nián</rt></ruby>。
 </p>
@@ -32,7 +32,7 @@ published: true
     <ruby>表示<rt>biǎo shì</rt></ruby>，
     <ruby>这个地点<rt>zhè gè dì diǎn</rt></ruby>
     <ruby>可能记录<rt>kě néng jì lù</rt></ruby>
-    <ruby>十万年以上<rt>shí wàn nián yǐ shàng</rt></ruby>的
+    <ruby>十万年以上的<rt>shí wàn nián yǐ shàng de</rt></ruby>
     <ruby>人类活动<rt>rén lèi huó dòng</rt></ruby>。
 </p>
 
