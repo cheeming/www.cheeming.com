@@ -15,6 +15,8 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
 
 - Produce one new draft post under `_nice/` using `_nice/TEMPLATE.md`.
 - Keep the story short, beginner-friendly, and aligned with existing NICE posts.
+- Commit changes to git
+- Publish it to S3
 
 ## Workflow
 
@@ -47,3 +49,5 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
 - Mention the new file path.
 - Mention the value of `published` flag is still present.
 - Based on the `make build` output, confirm that the build is healthy or not
+- Confirm that git commit is done
+- Confirm that publishing to S3 is done
