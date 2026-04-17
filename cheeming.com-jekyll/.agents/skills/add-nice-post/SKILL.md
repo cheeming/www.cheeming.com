@@ -32,6 +32,9 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
    - No placeholder tokens remain (`PHRASE_`, `KEYWORD_`, `TITLE_IN_CHINESE`, etc.).
    - `<ruby>` and `<rt>` tags are balanced.
    - `source_url` is a valid URL string.
+6. Use `make build` to verify that build is healthy.
+7. If build is healthy, automatically commit new MD file into git history, using commit description: Add new post on "topic-slug". Replace "topic-slug" with the generated topic slug. Before running `git push`, run `ssh-add ~/.ssh/id_github` to add the relevant ssh key into ssh agent.
+8. Finally publish it to AWS S3, by first setup environment variable `export AWS_PROFILE=www.cheeming.com` and then run `make publish`
 
 ## Output style guardrails
 
@@ -42,5 +45,5 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
 ## Suggested user-facing summary
 
 - Mention the new file path.
-- Mention whether `published: false` is still present.
-- Suggest running `make build` to verify rendering.
+- Mention the value of `published` flag is still present.
+- Based on the `make build` output, confirm that the build is healthy or not
