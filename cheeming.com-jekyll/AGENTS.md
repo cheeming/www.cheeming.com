@@ -9,7 +9,7 @@ Scope: `cheeming.com-jekyll` in this workspace.
 - There is no CI/pre-commit/lint/test config in this repo.
 
 ## Commands (source of truth: `Makefile`)
-- Use `nix-shell` before running those make commands, such as `$(which nix-shell) --run 'make hack'`
+- Use `nix-shell` before running those make commands, such as `/nix/var/nix/profiles/default/bin/nix-shell --run 'make hack'`
 - `make install` -> `bundle install`
 - `make hack` -> `bundle exec jekyll clean` + `bundle exec jekyll serve --incremental --future --livereload`
 - Dev URL: `http://127.0.0.1:4000`
