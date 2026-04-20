@@ -14,6 +14,7 @@ pkgs.mkShellNoCC {
     libffi
     pkg-config
     openssl
+    awscli2
   ];
 
   LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
