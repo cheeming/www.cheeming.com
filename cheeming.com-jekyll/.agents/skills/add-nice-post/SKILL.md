@@ -43,7 +43,7 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
 
 - Keep total length compact (roughly 120-220 Chinese characters, excluding pinyin tags).
 - Use neutral, factual news tone; avoid opinionated or speculative claims.
-- Prefer common vocabulary over advanced idioms. Prefer simple and easy words.
+- Prefer common vocabulary over advanced idioms. Prefer simple and easy words such as words from HSK 1, HSK 2 and HSK 3.
 
 ## Suggested user-facing summary
 
