@@ -41,7 +41,7 @@ published: true
     <ruby>很多<rt>hěnduō</rt></ruby>
     <ruby>国家<rt>guójiā</rt></ruby>
     <ruby>的人<rt>rén</rt></ruby>
-    <ruby>都<rt>dōu</ruby>
+    <ruby>都<rt>dōu</rt></ruby>
     <ruby>喜欢<rt>xǐhuān</rt></ruby>
     <ruby>它们<rt>tāmen</rt></ruby>。
 </p>
