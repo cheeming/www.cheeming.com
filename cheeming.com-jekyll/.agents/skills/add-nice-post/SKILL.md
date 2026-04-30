@@ -30,11 +30,12 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
    - 4 short paragraphs plus 1 keyword paragraph.
    - Wrap key words/phrases with `<ruby>汉字<rt>pinyin</rt></ruby>`.
    - Keep sentence structure simple for language learners.
-5. Replace keyword placeholders with exactly 3 keywords (each with pinyin).
+5. Replace keyword placeholders with exactly 3 keywords (each with pinyin using pinyin tone marks).
 6. Final checks before returning:
    - No placeholder tokens remain (`PHRASE_`, `KEYWORD_`, `TITLE_IN_CHINESE`, etc.).
    - `<ruby>` and `<rt>` tags are balanced.
    - `source_url` is a valid URL string.
+   - Ensure that pinyin have tone marks
 7. Use `make build` to verify that build is healthy.
 8. If build is healthy, automatically commit new MD file into git history, using commit description: Add new post on "topic-slug". Replace "topic-slug" with the generated topic slug.
 9. Finally publish it to AWS S3, by first setup environment variable `export AWS_PROFILE=www.cheeming.com` and then run `make publish`
