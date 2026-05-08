@@ -6,6 +6,7 @@ title: News in Chinese, Easy!
 <p>
 Daily news in simple and easy chinese, for the beginner chinese learners. Click on each story to read more!
 </p>
+<button type="button" class="nice-pinyin-toggle" data-pinyin-toggle aria-pressed="false">Hide pinyin</button>
 <ul class="posts nice-posts">
 {% assign nice_posts = site.nice | sort: "date" | reverse %}
 {% for post in nice_posts %}
@@ -30,3 +31,44 @@ Daily news in simple and easy chinese, for the beginner chinese learners. Click 
         Last updated: <span class="time">{{ site.time | date_to_string }}</span>
     </p>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var storageKey = "nicePinyinHidden";
+    var pinyinToggle = document.querySelector("[data-pinyin-toggle]");
+
+    function setPinyinState(isHidden) {
+        document.body.classList.toggle("pinyin-hidden", isHidden);
+        if (pinyinToggle) {
+            pinyinToggle.textContent = isHidden ? "Show pinyin" : "Hide pinyin";
+            pinyinToggle.setAttribute("aria-pressed", isHidden ? "true" : "false");
+        }
+    }
+
+    function loadPinyinState() {
+        try {
+            return window.localStorage.getItem(storageKey) === "1";
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function savePinyinState(isHidden) {
+        try {
+            window.localStorage.setItem(storageKey, isHidden ? "1" : "0");
+        } catch (error) {
+            return;
+        }
+    }
+
+    setPinyinState(loadPinyinState());
+
+    if (pinyinToggle) {
+        pinyinToggle.addEventListener("click", function () {
+            var nextHidden = !document.body.classList.contains("pinyin-hidden");
+            setPinyinState(nextHidden);
+            savePinyinState(nextHidden);
+        });
+    }
+});
+</script>

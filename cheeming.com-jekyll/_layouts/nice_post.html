@@ -15,6 +15,7 @@ layout: default
     </h1>
     <div><span class="time">{{ page.date | date_to_string }}</span></div>
     <p class="nice-source">来源：<a href="{{ page.source_url }}">{{ page.source_name }}</a></p>
+    <button type="button" class="nice-pinyin-toggle" data-pinyin-toggle aria-pressed="false">Hide pinyin</button>
     <p class="nice-translation-help">Hover for English translation. On mobile, tap a phrase.</p>
     {{ content }}
 </div>
@@ -25,7 +26,43 @@ layout: default
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+    var storageKey = "nicePinyinHidden";
+    var pinyinToggle = document.querySelector("[data-pinyin-toggle]");
     var rubies = document.querySelectorAll(".nice-post ruby[data-en]");
+
+    function setPinyinState(isHidden) {
+        document.body.classList.toggle("pinyin-hidden", isHidden);
+        if (pinyinToggle) {
+            pinyinToggle.textContent = isHidden ? "Show pinyin" : "Hide pinyin";
+            pinyinToggle.setAttribute("aria-pressed", isHidden ? "true" : "false");
+        }
+    }
+
+    function loadPinyinState() {
+        try {
+            return window.localStorage.getItem(storageKey) === "1";
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function savePinyinState(isHidden) {
+        try {
+            window.localStorage.setItem(storageKey, isHidden ? "1" : "0");
+        } catch (error) {
+            return;
+        }
+    }
+
+    setPinyinState(loadPinyinState());
+
+    if (pinyinToggle) {
+        pinyinToggle.addEventListener("click", function () {
+            var nextHidden = !document.body.classList.contains("pinyin-hidden");
+            setPinyinState(nextHidden);
+            savePinyinState(nextHidden);
+        });
+    }
 
     rubies.forEach(function (ruby) {
         ruby.setAttribute("tabindex", "0");
