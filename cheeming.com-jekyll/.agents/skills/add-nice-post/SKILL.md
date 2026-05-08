@@ -30,6 +30,8 @@ Use this skill when the user asks for a new NICE story in Chinese with pinyin.
    - 4 short paragraphs plus 1 keyword paragraph.
    - Wrap key words/phrases with `<ruby>汉字<rt>pinyin</rt></ruby>`.
    - Keep sentence structure simple for language learners.
+   - For the phrases, try to limit to 4 chinese characters per <ruby> tag so that the pinyin tone marks will match the characters properly.
+   - But if the word is a noun and it makes for the characters to be together, that is fine as well.
 5. Replace keyword placeholders with exactly 3 keywords (each with pinyin using pinyin tone marks).
 6. Final checks before returning:
    - No placeholder tokens remain (`PHRASE_`, `KEYWORD_`, `TITLE_IN_CHINESE`, etc.).
