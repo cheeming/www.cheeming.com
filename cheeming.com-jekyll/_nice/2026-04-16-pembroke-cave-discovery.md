@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "英国城堡下发现大型史前洞穴"
+title_en: "A large prehistoric cave is discovered beneath a UK castle"
 title_pinyin: "yīng guó chéng bǎo xià fā xiàn dà xíng shǐ qián dòng xué"
 date: 2026-04-16
 lang: zh

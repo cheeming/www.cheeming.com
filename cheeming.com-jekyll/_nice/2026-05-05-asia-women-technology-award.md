@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "亚洲女性科技奖鼓励新研究"
+title_en: "Asia's women in tech award encourages new research"
 title_pinyin: "Yàzhōu nǚxìng kējì jiǎng gǔlì xīn yánjiū"
 date: 2026-05-05
 lang: zh

@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "美国团队计划让灭绝羚羊回归"
+title_en: "US team plans to bring back an extinct antelope"
 title_pinyin: "Měiguó tuánduì jìhuà ràng mièjué língyáng huíguī"
 date: 2026-05-01
 lang: zh

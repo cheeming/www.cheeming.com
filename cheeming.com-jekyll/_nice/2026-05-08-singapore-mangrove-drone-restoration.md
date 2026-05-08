@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "新加坡用无人机帮助红树林恢复"
+title_en: "Singapore uses drones to help restore mangroves"
 title_pinyin: "Xīnjiāpō yòng wúrénjī bāngzhù hóngshùlín huīfù"
 date: 2026-05-08
 lang: zh

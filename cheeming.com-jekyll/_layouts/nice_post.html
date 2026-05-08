@@ -7,8 +7,12 @@ layout: default
 
 <div class="post nice-post">
     <h1>
-        {% if page.title_pinyin %}
+        {% if page.title_pinyin and page.title_en %}
+        <ruby data-en="{{ page.title_en }}">{{ page.title }}<rt>{{ page.title_pinyin }}</rt></ruby>
+        {% elsif page.title_pinyin %}
         <ruby>{{ page.title }}<rt>{{ page.title_pinyin }}</rt></ruby>
+        {% elsif page.title_en %}
+        <ruby data-en="{{ page.title_en }}">{{ page.title }}</ruby>
         {% else %}
         {{ page.title }}
         {% endif %}

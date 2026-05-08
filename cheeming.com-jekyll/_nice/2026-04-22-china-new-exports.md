@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "中国的新出口产品让世界瞩目"
+title_en: "China's new export products attract global attention"
 title_pinyin: "Zhōngguó de xīn chūkǒu chǎnpǐn ràng shìjiè zhǔmù"
 date: 2026-04-22
 lang: zh

@@ -215,6 +215,10 @@ blockquote {
     line-height: 1.7em;
 }
 
+.nice-post p ruby {
+    line-height: 1.8em;
+}
+
 .nice-post h1 {
     font-size: 1.2em;
 }
@@ -230,13 +234,15 @@ blockquote {
     line-height: 1.7em;
 }
 
-.nice-post ruby[data-en] {
+.nice-post ruby[data-en],
+.nice-posts ruby[data-en] {
     position: relative;
     cursor: help;
     outline: none;
 }
 
-.nice-post ruby[data-en]::after {
+.nice-post ruby[data-en]::after,
+.nice-posts ruby[data-en]::after {
     content: attr(data-en);
     position: absolute;
     left: 50%;
@@ -246,7 +252,7 @@ blockquote {
     color: #ffffff;
     border-radius: 0.35rem;
     padding: 0.35rem 0.5rem;
-    font-size: 0.5em;
+    font-size: 0.75rem;
     line-height: 1.4;
     text-align: left;
     min-width: min(10rem, 80vw);
@@ -262,18 +268,23 @@ blockquote {
 
 .nice-post ruby[data-en]:hover::after,
 .nice-post ruby[data-en]:focus::after,
-.nice-post ruby[data-en].is-open::after {
+.nice-post ruby[data-en].is-open::after,
+.nice-posts ruby[data-en]:hover::after,
+.nice-posts ruby[data-en]:focus::after,
+.nice-posts ruby[data-en].is-open::after {
     opacity: 1;
     visibility: visible;
 }
 
-.nice-post ruby[data-en]:focus {
+.nice-post ruby[data-en]:focus,
+.nice-posts ruby[data-en]:focus {
     text-decoration: underline dotted;
     text-underline-offset: 0.15em;
 }
 
 @media (hover: none) {
-    .nice-post ruby[data-en] {
+    .nice-post ruby[data-en],
+    .nice-posts ruby[data-en] {
         cursor: pointer;
     }
 }
@@ -292,7 +303,8 @@ blockquote {
         line-height: 1.45em;
     }
 
-    .nice-post ruby[data-en]::after {
+    .nice-post ruby[data-en]::after,
+    .nice-posts ruby[data-en]::after {
         left: 0;
         transform: none;
         min-width: 0;

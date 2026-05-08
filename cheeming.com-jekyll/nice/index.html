@@ -14,8 +14,12 @@ Daily news in simple and easy chinese, for the beginner chinese learners. Click 
     <li>
         <span class="time nice-time">{{ post.date | date_to_string }}</span>
         <a href="{{ post.url }}" class="nice-title-link">
-            {% if post.title_pinyin %}
+            {% if post.title_pinyin and post.title_en %}
+            <ruby data-en="{{ post.title_en }}">{{ post.title }}<rt>{{ post.title_pinyin }}</rt></ruby>
+            {% elsif post.title_pinyin %}
             <ruby>{{ post.title }}<rt>{{ post.title_pinyin }}</rt></ruby>
+            {% elsif post.title_en %}
+            <ruby data-en="{{ post.title_en }}">{{ post.title }}</ruby>
             {% else %}
             {{ post.title }}
             {% endif %}
@@ -36,6 +40,7 @@ Daily news in simple and easy chinese, for the beginner chinese learners. Click 
 document.addEventListener("DOMContentLoaded", function () {
     var storageKey = "nicePinyinHidden";
     var pinyinToggle = document.querySelector("[data-pinyin-toggle]");
+    var rubies = document.querySelectorAll(".nice-posts ruby[data-en]");
 
     function setPinyinState(isHidden) {
         document.body.classList.toggle("pinyin-hidden", isHidden);
@@ -70,5 +75,39 @@ document.addEventListener("DOMContentLoaded", function () {
             savePinyinState(nextHidden);
         });
     }
+
+    rubies.forEach(function (ruby) {
+        ruby.setAttribute("tabindex", "0");
+        ruby.setAttribute("role", "button");
+        ruby.setAttribute("aria-label", ruby.getAttribute("data-en"));
+
+        ruby.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                ruby.classList.toggle("is-open");
+            }
+
+            if (event.key === "Escape") {
+                ruby.classList.remove("is-open");
+            }
+        });
+
+        ruby.addEventListener("blur", function () {
+            ruby.classList.remove("is-open");
+        });
+    });
+
+    document.addEventListener("click", function (event) {
+        var selected = event.target.closest(".nice-posts ruby[data-en]");
+        rubies.forEach(function (ruby) {
+            if (ruby !== selected) {
+                ruby.classList.remove("is-open");
+            }
+        });
+
+        if (selected) {
+            selected.classList.toggle("is-open");
+        }
+    });
 });
 </script>

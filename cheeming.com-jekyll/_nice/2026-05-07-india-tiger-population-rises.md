@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "印度野生老虎数量上升"
+title_en: "India's wild tiger population rises"
 title_pinyin: "Yìndù yěshēng lǎohǔ shùliàng shàngshēng"
 date: 2026-05-07
 lang: zh

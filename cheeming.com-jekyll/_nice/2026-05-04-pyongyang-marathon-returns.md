@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "平壤马拉松欢迎外国跑者"
+title_en: "Pyongyang Marathon welcomes foreign runners"
 title_pinyin: "Píngrǎng mǎlāsōng huānyíng wàiguó pǎozhě"
 date: 2026-05-04
 lang: zh

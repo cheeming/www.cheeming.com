@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "北京机器人半马跑出新突破"
+title_en: "Beijing's humanoid robot half marathon marks a new breakthrough"
 title_pinyin: "Běijīng jīqìrén bànmǎ pǎo chū xīn tūpò"
 date: 2026-04-23
 lang: zh

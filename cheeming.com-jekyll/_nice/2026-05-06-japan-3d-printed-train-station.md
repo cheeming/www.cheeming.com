@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "日本3D打印小火车站启用"
+title_en: "Japan opens a 3D-printed local train station"
 title_pinyin: "Rìběn sān D dǎyìn xiǎo huǒchē zhàn qǐyòng"
 date: 2026-05-06
 lang: zh

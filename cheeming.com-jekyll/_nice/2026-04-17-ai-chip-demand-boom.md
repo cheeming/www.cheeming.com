@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "ASML和台积电看好AI芯片需求"
+title_en: "ASML and TSMC are optimistic about AI chip demand"
 title_pinyin: "ASML hé tái jī diàn kàn hǎo AI xīn piàn xū qiú"
 date: 2026-04-17
 lang: zh

@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "亚洲向自然学习做体育新科技"
+title_en: "Asia learns from nature to build new sports technology"
 title_pinyin: "Yàzhōu xiàng zìrán xuéxí zuò tǐyù xīn kējì"
 date: 2026-04-25
 lang: zh

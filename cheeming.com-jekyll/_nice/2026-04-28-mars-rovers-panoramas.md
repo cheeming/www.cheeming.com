@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "NASA两台火星车拍下全景新图"
+title_en: "NASA's two Mars rovers capture new panoramic images"
 title_pinyin: "NASA liǎng tái huǒ xīng chē pāi xià quán jǐng xīn tú"
 date: 2026-04-28
 lang: zh

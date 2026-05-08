@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "LG和英伟达讨论机器人合作"
+title_en: "LG and Nvidia discuss robot cooperation"
 title_pinyin: "LG hé Yīngwěidá tǎolùn jīqìrén hézuò"
 date: 2026-04-30
 lang: zh

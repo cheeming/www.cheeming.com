@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "亚洲向自然学习做出新技术"
+title_en: "Asia learns from nature to create new technology"
 title_pinyin: "Yàzhōu xiàng zìrán xuéxí zuò chū xīn jìshù"
 date: 2026-04-24
 lang: zh

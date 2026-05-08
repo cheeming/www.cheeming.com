@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "亚洲从自然找到科学与体育科技新点子"
+title_en: "Asia finds new ideas for science and sports technology in nature"
 title_pinyin: "Yàzhōu cóng zìrán zhǎodào kēxué yǔ tǐyù kējì xīn diǎnzi"
 date: 2026-04-26
 lang: zh

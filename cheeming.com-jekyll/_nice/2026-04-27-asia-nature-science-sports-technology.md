@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "亚洲用自然做出科学和体育科技好消息"
+title_en: "Asia uses nature to create good news in science and sports tech"
 title_pinyin: "Yàzhōu yòng zìrán zuòchū kēxué hé tǐyù kējì hǎo xiāoxi"
 date: 2026-04-27
 lang: zh

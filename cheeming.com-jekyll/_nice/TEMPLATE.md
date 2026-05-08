@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "TITLE_IN_CHINESE"
+title_en: "TITLE_IN_ENGLISH"
 title_pinyin: "title in pinyin"
 date: YYYY-MM-DD
 lang: zh

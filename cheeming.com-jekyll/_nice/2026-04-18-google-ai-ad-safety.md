@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "Google用AI拦截诈骗广告"
+title_en: "Google uses AI to block scam ads"
 title_pinyin: "Google yòng AI lán jié zhà piàn guǎng gào"
 date: 2026-04-18
 lang: zh

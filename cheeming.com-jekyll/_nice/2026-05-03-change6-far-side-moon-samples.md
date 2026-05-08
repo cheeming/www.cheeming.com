@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "嫦娥六号带回月球背面样品"
+title_en: "Chang'e-6 brings back samples from the far side of the Moon"
 title_pinyin: "Chang'e liu hao dai hui yue qiu bei mian yang pin"
 date: 2026-05-03
 lang: zh

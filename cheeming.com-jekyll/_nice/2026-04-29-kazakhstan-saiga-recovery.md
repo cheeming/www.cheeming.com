@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "哈萨克斯坦赛加羚羊数量大增"
+title_en: "Kazakhstan's saiga antelope population surges"
 title_pinyin: "Hāsàkèsītǎn sàijiā língyáng shùliàng dà zēng"
 date: 2026-04-29
 lang: zh

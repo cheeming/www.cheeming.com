@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "蓝色起源回收火箭助推器"
+title_en: "Blue Origin recovers a rocket booster"
 title_pinyin: "lán sè qǐ yuán huí shōu huǒ jiàn zhù tuī qì"
 date: 2026-04-20
 lang: zh

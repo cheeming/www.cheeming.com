@@ -1,6 +1,7 @@
 ---
 layout: nice_post
 title: "眼纹验证帮助平台防诈骗"
+title_en: "Eye-pattern verification helps platforms prevent fraud"
 title_pinyin: "yǎn wén yàn zhèng bāng zhù píng tái fáng zhà piàn"
 date: 2026-04-19
 lang: zh
