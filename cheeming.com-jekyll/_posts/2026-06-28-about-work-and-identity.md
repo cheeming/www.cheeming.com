@@ -4,7 +4,7 @@ title: Work and Identity
 ---
 I was back in Malaysia, and a friend asked me: "Won't you get bored of retirement after 6 months of travel and such?". It is a very relevant question, and I thought about it for a while.
 
-I answered that travel (in many cases) is more like entertainment, and you lose the dopamine hit very quickly. I then said that it is more important to find things to do, i.e. hobbies where you need to build up a skill or capability over time, e.g. playing music, playing a sport, etc. Basically find things to do that can grow with you over time. Of course, I am generalising here, I am sure there are different ways of travel that can be more like building up new capabilities over time.
+I answered that travel (in many cases) is more like entertainment, and you lose the dopamine hit very quickly. I then said that it is more important to find things to do, hobbies where you need to build up a skill or capability over time, e.g. playing music, playing a sport, etc. Basically find things to do that can grow with you over time. Of course, I am generalising here, I am sure there are different ways of travel that can be more like building up new capabilities over time.
 
 This lead me to think about <a href="https://www.goodreads.com/quotes/451146-instead-of-wondering-when-your-next-vacation-is-maybe-you" target="_blank">this quote</a>:
 
